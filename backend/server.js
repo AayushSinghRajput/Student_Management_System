@@ -13,7 +13,7 @@ app.use(express.json());
 
 // Routes
 app.use("/students", studentRoutes);
-app.use("/departments", departmentRoutes); // Added department route
+app.use("/departments", departmentRoutes);
 app.use("/attendance", attendanceRoutes);
 
 // Start Server
