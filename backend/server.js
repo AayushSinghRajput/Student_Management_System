@@ -4,6 +4,7 @@ require("dotenv").config();
 const studentRoutes = require("./routes/studentRoutes");
 const departmentRoutes = require("./routes/departmentRoutes");
 const attendanceRoutes = require("./routes/attendanceRoutes");
+const facultyRoutes = require("./routes/facultyRoutes");
 // Initialize Express App
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use("/students", studentRoutes);
 app.use("/departments", departmentRoutes);
 app.use("/attendance", attendanceRoutes);
+app.use("/faculty", facultyRoutes);
 
 // Start Server
 const PORT = process.env.PORT || 5000;
